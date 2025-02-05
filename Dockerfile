@@ -21,7 +21,7 @@ USER node
 # you can instead set them when launching the container, this way you don't have to fork the repo or rebuild the container every time you want to change something
 # if someone has told you to do modify them here please ignore their advice and tell them they're wrong
 ENV YT2009_PORT=80 \
-    YT2009_ENV=dev \
+    YT2009_ENV=prod \
     YT2009_IP=skittleology-yt2009.onrender.com \
     YT2009_SSL=false \
     YT2009_SSLPORT=443 \
@@ -35,6 +35,7 @@ ENV YT2009_PORT=80 \
     YT2009_RATELIMIT=false \
     YT2009_AC=false \
     YT2009_GDATA_AUTH=false
+    YT2009_TOKENS=true
 
 RUN npm install && \
     ln -s /data/androiddata.json back/androiddata.json && \
