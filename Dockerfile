@@ -34,7 +34,7 @@ ENV YT2009_PORT=80 \
     YT2009_DISABLEMASTER=false \
     YT2009_RATELIMIT=false \
     YT2009_AC=false \
-    YT2009_GDATA_AUTH=false
+    YT2009_GDATA_AUTH=false \
     YT2009_TOKENS=true
 
 RUN npm install && \
